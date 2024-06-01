@@ -1,0 +1,27 @@
+[project]
+name = "rank-unrank"
+version = "0.0.1"
+authors = [
+  { name="Tomasz Waleń", email="walen@mimuw.edu.pl" },
+]
+description = "Rank unrank implementation"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  "click",
+]
+[project.optional-dependencies]
+dev = [
+  "pytest",
+  "pre-commit",
+  "pyperf",
+  "perfplot",
+]
+
+[project.scripts]
+rank-unrank = "rank_unrank.tool:cli"
